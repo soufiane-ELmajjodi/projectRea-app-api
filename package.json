@@ -15,12 +15,13 @@
     "@clerk/clerk-expo": "^2.16.1",
     "@neondatabase/serverless": "^1.0.2",
     "cors": "^2.8.5",
+    "cron": "^4.3.3",
     "dotenv": "^17.2.3",
     "drizzle-orm": "^0.44.6",
     "expresse": "^1.0.2",
     "globale": "^1.0.0",
     "mysql2": "^3.15.2",
-    "node-cron": "^4.2.1",
+    "node-cron": "^4.2 .1",
     "pg": "^8.16.3"
   },
   "devDependencies": {

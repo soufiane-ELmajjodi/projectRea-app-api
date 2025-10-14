@@ -6,11 +6,13 @@ import { error } from "console";
 import { db } from "./config/db.js";
 import { favoritesTable } from "./db/schema.js";
 import { and, eq } from "drizzle-orm";
+import job from "./config/cron.js";
 
 
 const app = express(); 
 
 app.use(express.json());
+ if(ENV.NODE_ENV === "production") job.start();
 
 const PORT = ENV.PORT || 3001;
 
