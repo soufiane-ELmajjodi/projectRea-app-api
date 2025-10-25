@@ -9,6 +9,7 @@ import { and, eq } from "drizzle-orm";
 import job from "./config/cron.js";
 
 
+
 const app = express(); 
 
 app.use(express.json());
@@ -34,7 +35,7 @@ app.post("/api/favorites", async(req,res)=>{
     userId = Number(userId);
     recipeId = Number(recipeId);
     servings = servings !== undefined ? Number(servings) : null;
- 
+
 
     // ✅ إدخال البيانات فالداتا بيز
     const newFavorite = await db
